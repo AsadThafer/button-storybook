@@ -1,9 +1,7 @@
-import { configure } from "@storybook/react";
-
-const req = require.context("../src/components", true, /Button\.stories\.js$/);
-
-function loadStories() {
-  req.keys().forEach((filename) => req(filename));
-}
-
-configure(loadStories, module);
+module.exports = {
+  stories: ["../src/**/*.stories.js"],
+  addons: ["@storybook/addon-actions", "@storybook/addon-links", "@storybook/addon-knobs/register"],
+  core: {
+    builder: "webpack5"
+  }
+};
