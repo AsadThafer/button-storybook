@@ -1,0 +1,20 @@
+.Button_Link {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: red;
+  cursor: pointer;
+}
+
+.Button_Link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.Button {
+  cursor: pointer;
+  border-radius: 5px;
+}
